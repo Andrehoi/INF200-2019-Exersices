@@ -16,8 +16,8 @@ def letter_freq(txt):
     txt_dictionary = {}
 
     for letter in range(len(alphabet)):
-        if txt_lower(alphabet[letter]) != 0:
-            txt_dictionary[alphabet[letter]] = [txt_lower.count[letter]]
+        if txt_lower.count(alphabet[letter]) != 0:
+            txt_dictionary[alphabet[letter]] = txt_lower.count(alphabet[letter])
 
     return txt_dictionary
 

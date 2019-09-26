@@ -2,9 +2,6 @@
 
 from random import randint
 
-__author__ = ''
-__email__ = '@nmbu.no'
-
 
 def your_guess():
     guess = 0
