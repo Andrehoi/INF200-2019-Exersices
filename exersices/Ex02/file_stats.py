@@ -2,8 +2,10 @@
 
 
 def char_counts(textfilename):
-    """Char_counts is a function which opens the input file.  It then converts the file into a single string.
-    Then it converts the letters into utf8 values and outputs the number of times the utf8-values are repeated """
+    """Char_counts is a function which opens the input file.
+    It then converts the file into a single string. Then it converts the
+    letters into utf8 values and outputs the number of times the utf8-values
+     are repeated """
 
     text_string = open(textfilename).read()
     """ Converts the file into a string"""
@@ -13,7 +15,8 @@ def char_counts(textfilename):
 
     character_list2 = [x for x in character_list if x]
     print(character_list2)
-    """ Removes all spaces from character_list, thus only elements with utf8-values are left in the list"""
+    """ Removes all spaces from character_list, thus only elements with
+     utf8-values are left in the list"""
 
     utf8_value = []
     for i in range(len(character_list2)):

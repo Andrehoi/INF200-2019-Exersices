@@ -7,8 +7,9 @@ def letter_freq(txt):
     txt_lower = txt.lower()
     """Removes caps from all letters."""
 
-    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
-                'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ', '!', '?', ',',
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+                'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+                'v', 'w', 'x', 'y', 'z', ' ', '!', '?', ',',
                 '.', '+', '-', '_', '&', '%', '(', ')', '"', ':']
 
     txt_dictionary = {}
@@ -16,8 +17,9 @@ def letter_freq(txt):
     for i in range(len(alphabet)):
         if txt_lower.count(alphabet[i]) != 0:
             txt_dictionary[ord(alphabet[i])] = txt_lower.count(alphabet[i])
-    """Fills a dictionary with all letters, however instead of storing each letter and its 
-    corresponding frequency, we store its utf8-value instead of the letter."""
+    """Fills a dictionary with all letters, however instead of storing each
+     letter and its corresponding frequency, we store its utf8-value instead 
+     of the letter."""
 
     return txt_dictionary
 
