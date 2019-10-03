@@ -41,7 +41,7 @@ def entropy(message):
     entropi = 0
 
     for index in range(len(letter_frequencies)):
-        p_i = float(repeated_letter[index])/number_of_letters
+        p_i = float(list(repeated_letter)[index])/number_of_letters
 
         entropi += - p_i*log(p_i, 2)
     """calculates the fraction p_i which is defined as 
